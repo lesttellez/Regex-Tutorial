@@ -1,6 +1,6 @@
 # RegEx- A Brief Tutorial
 
-Have you ever wondered what happens when you click the "filter" check boxes on a web page? How does the page know what to look for in your query? How about the "find and replace" option in Mircosoft Word? On a basic and conceptual level, these search features are based off of or acutally use a search pattern. These patterns, termed Regular Expressions (regex) are strings that denotes a specific pattern. This pattern is then used to match exact or partial string patterns of a target string. For example, in a Word document you crtl+f (search for) and type in 'x', you then get a list of all the 'x's in the document (these are typically highlighted in Word).
+Have you ever wondered what happens when you click the "filter" check boxes on a web page? How does the page know what to look for in your query? How about the "find and replace" option in Mircosoft Word? On a basic and conceptual level, these search features are based off of or acutally use a search pattern. These patterns, termed Regular Expressions (regex) are strings that denotes a specific pattern. This pattern is then used to match exact or partial string patterns of a target string. For example, in a Word document you crtl+f (search for) and type in 'x', you then get a list of all the 'x's in the document (these are typically highlighted in Word). *Please see RAW for comments pertaining to references, or my <a href="https://github.com/Tim-Zebra/17-Homework-CS/blob/main/README.md">ReadMe.md<a> file.*
 
 ## Summary
 
