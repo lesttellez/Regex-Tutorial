@@ -1,7 +1,7 @@
-# 
+# RegEx - Brief Tutorial
 
 ## Description
-describe <br /> <br />
+A simple markdown explaining the basic in's-and-out's of RegEx <br /> <br />
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
  ## Table of Contents:
