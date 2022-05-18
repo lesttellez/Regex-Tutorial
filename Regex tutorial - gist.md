@@ -27,12 +27,27 @@ This tutorial will explain componets of a regex and how it works. The regex we w
 
 Regex expressions are made of a miraid of components, the most basic of which are referred to as *atoms*. 
 <!-- Atoms obtained from https://www.cs.wcupa.edu/rkline/index/regular-expressions.html -->
-<ul>
-  <li> Single Characters: ()
-  <li>
-  <li>
-  <li>
-  <li>
+<ul> Atoms
+  <li> Single Characters:
+    <p> Without signifcance: represents the character in the target string </p>
+    <ul> Operator characters (significanct): ^ . [ $ ( ) | * + ? { \ </ul>
+      <li>" ^ $ " : 'Assertions'</li>
+      <li>" . " : 'Wild Card'</li>
+      <li>" [ ] | ( ) " : 'Groups and Ranges'</li>
+      <li>" * + ? { } " : 'Quantifiers'</li>
+      <li>" \ " : Character Class</li>
+  </li>
+  <li> Wild card:
+    <p>The . Yes, the period, matches any single character (except \n)</p>
+  </li>
+  <li> Bracket Expressions:
+    <p>Using brackets eg. [ ] creates a character set. This set of characters is used to match any single character from the target string. These ranges are denoted using " - " to specify the 'between' portion of two criteria</p>
+  </li>
+      <li>" ^ $ " : 'Assertions'</li>
+      <li>" . " : 'Wild Card'</li>
+      <li>" [ ] | ( ) " : 'Groups and Ranges'</li>
+      <li>" * + ? { } " : 'Quantifiers'</li>
+      <li>" \ " : Character Class</li>
 </ul>
 
 ### Anchors
