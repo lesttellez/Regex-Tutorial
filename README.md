@@ -14,8 +14,7 @@ A simple markdown explaining the basic in's-and-out's of RegEx <br /> <br />
   **[Author](#author)** <br />
 
 ## How to Use:
-* 
-* 
+* Go to the deployed page and read through the gist
 
 ## Application Demos:
 <h2 align="center">Title</h2>
@@ -25,15 +24,17 @@ A simple markdown explaining the basic in's-and-out's of RegEx <br /> <br />
 <p align="center"><font size="4"><a href="">Video Demo</a></font></p>
 
 ## Link to Deployed Page:
-
+https://gist.github.com/Tim-Zebra/3670f5235b2fcdd5dbf85251d1f9db89
 
 ## References:
+
+* Code snippet obtained from mVChr at https://stackoverflow.com/questions/5465375/javascript-date-regex-dd-mm-yyyy
 * 
-* 
+
 ## Development Process:
-1. 
-2. 
-3. See commits for more details
+1. Created base files
+2. Reviewied quick overviews of regex
+3. Entered found info into the gist template
 
 ## Author:
 Created by Timothy Zalewski | Deployed on [GitHub](https://github.com/Tim-Zebra)
