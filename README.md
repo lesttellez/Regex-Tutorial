@@ -17,9 +17,7 @@ A simple markdown explaining the basic in's-and-out's of RegEx <br /> <br />
 * Go to the deployed page and read through the gist
 
 ## Application Demos:
-<h2 align="center">Title</h2>
-<p align="center"><img src="./demos/.png" alt="image demo" width="800" height="auto"/></p> <br /><br />
-<h2 align="center">Second Title</h2>
+<h2 align="center">Gist Overview</h2>
 <p align="center"><img src="./demos/.gif" alt="gif demo" width="800" height="auto"/></p> <br />
 <p align="center"><font size="4"><a href="">Video Demo</a></font></p>
 
@@ -29,7 +27,8 @@ https://gist.github.com/Tim-Zebra/3670f5235b2fcdd5dbf85251d1f9db89
 ## References:
 
 * Code snippet obtained from mVChr at https://stackoverflow.com/questions/5465375/javascript-date-regex-dd-mm-yyyy
-* 
+* Obtained information from developer.mozzilla.org at https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+* Obtained information from rkline at https://www.cs.wcupa.edu/rkline/index/regular-expressions.html
 
 ## Development Process:
 1. Created base files
