@@ -25,29 +25,22 @@ This tutorial will explain componets of a regex and how it works. The regex we w
 
 
 
-Regex expressions are made of a miraid of components, the most basic of which are referred to as *atoms*. 
+Regex expressions are made of a miraid of components, the most basic of which are referred to as *atoms*. Atoms can be thought of as 'single characters' and they are either significant or non-significant.
 <!-- Atoms obtained from https://www.cs.wcupa.edu/rkline/index/regular-expressions.html -->
-<ul> Atoms
+<ul>
   <li> Single Characters:
-    <p> Without signifcance: represents the character in the target string </p>
-    <ul> Operator characters (significanct): ^ . [ $ ( ) | * + ? { \ </ul>
-      <li>" ^ $ " : 'Assertions'</li>
-      <li>" . " : 'Wild Card'</li>
-      <li>" [ ] | ( ) " : 'Groups and Ranges'</li>
-      <li>" * + ? { } " : 'Quantifiers'</li>
-      <li>" \ " : Character Class</li>
+    <ul>
+      <li> Without signifcance: represents the character in the target string </li>
+      <li> Operator characters (significanct): ^ . [ $ ( ) | * + ? { \
+          <ul>
+            <li>" ^ $ " : 'Anchors' also called 'Assertions</li>
+            <li>" \ . " : Character Class</li>
+            <li>" [ ] | ( ) " : 'Groups and Ranges'</li>
+            <li>" * + ? { } " : 'Quantifiers'</li>
+          </ul>
+      </li>
+    </ul>
   </li>
-  <li> Wild card:
-    <p>The . Yes, the period, matches any single character (except \n)</p>
-  </li>
-  <li> Bracket Expressions:
-    <p>Using brackets eg. [ ] creates a character set. This set of characters is used to match any single character from the target string. These ranges are denoted using " - " to specify the 'between' portion of two criteria</p>
-  </li>
-      <li>" ^ $ " : 'Assertions'</li>
-      <li>" . " : 'Wild Card'</li>
-      <li>" [ ] | ( ) " : 'Groups and Ranges'</li>
-      <li>" * + ? { } " : 'Quantifiers'</li>
-      <li>" \ " : Character Class</li>
 </ul>
 
 ### Anchors
@@ -57,7 +50,7 @@ Regex expressions are made of a miraid of components, the most basic of which ar
 ### Grouping Constructs
 
 ### Bracket Expressions
-
+    <p>Using brackets eg. [ ] creates a character set. This set of characters is used to match any single character from the target string. These ranges are denoted using " - " to specify the 'between' portion of two criteria</p>
 ### Character Classes
 
 ### The OR Operator
