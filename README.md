@@ -4,14 +4,14 @@
 A simple markdown explaining the basic in's-and-out's of RegEx <br /> <br />
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
- ## Table of Contents:
+## Table of Contents:
 
-  **[How to Use](#how-to-use)** <br />
-  **[Application Demos](#application-demos)** <br />
-  **[Link to Deployed Page](#link-to-deployed-page)** <br />
-  **[References](#references)** <br />
-  **[Devlopment Process](#development-process)** <br />
-  **[Author](#author)** <br />
+**[How to Use](#how-to-use)** <br />
+**[Application Demos](#application-demos)** <br />
+**[Link to Deployed Page](#link-to-deployed-page)** <br />
+**[References](#references)** <br />
+**[Devlopment Process](#development-process)** <br />
+**[Author](#author)** <br />
 
 ## How to Use:
 * Go to the deployed page and read through the gist
