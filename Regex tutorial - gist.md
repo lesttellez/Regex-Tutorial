@@ -44,8 +44,20 @@ Regex expressions are made of a miraid of components, the most basic of which ar
 </ul>
 
 ### Anchors
+Also known as 'assertions', anchors are boundaries on your search query. They define how a match is found using your query. They indivate the beginnings and ends of criteria, as well as tell the match to "look-ahead", "look-behind", and other conditional expressions. For example:
+<ul>
+  <li>" ^ " : Matches the beginning of an input. eg. /^T/ will match 'T' in 'Tim', but will not match 'T' in 'timothy'.</li>
+  <li>" $ " : Matches the end of an input. eg. /m$/ will match 'm' in 'Tim', but will not match 'm' in 'Timothy'.</li>
+</ul>
 
 ### Quantifiers
+These define the criteria by number of characters or expressions to match. For Example:
+<ul>
+  <li>" * " : Matches the preceding item. eg. /ab*/ will match *all* instances of "bo" but also match all instances where the item begins with "b" or ends in "o".</li>
+  <li>" + " : Matches the following item 1 or multiple times. eg. /o+/ will match 'o' in 'lol and all 'o's in 'loooooooooool' </li>
+  <li>" ? " : Matches the end of an input. eg. </li>
+  <li>" { } " : Matches the end of an input. eg. </li>
+</ul>
 
 ### Grouping Constructs
 
