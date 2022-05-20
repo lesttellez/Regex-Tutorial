@@ -91,10 +91,76 @@ These are added to the end of an expression allowing the functionality to expand
 ### Example
 <h1>Now we've learned the bare basics of regex, possibly a little less maybe a little more. Regex at the source seems simple and straight forward, but knowing just enough and using great tools such as Professor Google should be enough to write some useful regex!</h1>
 <h2>Let's write a simple search to check if MM-DD-YYYY is present.</h2>
-<p>Criteria will be specific enough to filter out months 1-12, with an acceptable day ranging up to 31. We will not be filtering too far in depth such as accounting for days per given month (especially leap year). But this can be done, have at it after this tutorial if you're brave enough or want the extra practice. Let's break this down by patterns.</p>
+<p>Criteria will be specific enough to filter out months 1-12, with an acceptable day ranging up to 31. We will not be filtering too far in depth such as accounting for days per given month (especially leap year). Will also not concern ourselves with AD,BC, and future dates that exceed 4 digits for the year. But these can be done, have at it after this tutorial if you're brave enough or want the extra practice. Now! Let's start by creating our regex to match our simple date format:</p>
+
 <ul>
+  <li>Section - 'MM-'</li>
+    <ul>
+      <li> Pseudocode: I want a month to match if the first M is equal to 0-1 and the last M is equal to 0-9 only when the first digit is 0, else the second digit should only equal 0-2 . We want to group the MM.</li>
+        <ul>
+          <li>The first M:</li>
+          <ul>
+            <li>I want it to equal 0 or 1. This hints I should be using an OR operator. M will be used to denote the M not yet solved for</li>
+            <li>Code snippet: ([0]M|[1]M)</li>
+          </ul>
+          <li>The second M:</li>
+          <ul>
+            <li>I want it to equal 1-9 if the month is a single number (09) OR 0-2 (to account for oct, nov, dec.)</li>
+            <li>Code snippet: (M[1-9]|M[0-2])</li>
+          </ul>
+          <ul>
+            <li>Lets take care of whatever is being used to separate the dates, we will account for the standard MM.DD.YYYY, MM-DD-YYYY, and MM/DD/YYYY. We need for these separators to 1. not perform a function (such as ' . ' wildcard) and have them be 'literal'</li>
+            <li>Code snippet: [\/\.\-]</li>
+          </ul>
+        </ul>
+        <ul></ul>
+      </li>
+      <li>Our combined code snippet is: ([0][1-9]|[1][1-2])[\/\.\-] </li>
+    </ul>
+  </li>
+  <li>Section - 'DD-'
+    <ul>
+      <li> Pseudocode: I want the day to match 0 through 3, but at 3 I want the second digit to be no more than 1. The second digit may not be equal to 0 if the first digit is also 0</li>
+        <ul>
+          <li>The first D:</li>
+          <ul>
+            <li>I want it to equal 0 or 1. This hints that I be using an OR operator. D will be used to denote the D not yet solved for</li>
+            <li>Code snippet: ([0]D|[1-3]D)</li>
+          </ul>
+          <li>The second D:</li>
+          <ul>
+            <li>I want it to equal 1-9 if the month is a single number (09) OR 0-9 if the month begins with 1-2 OR 0-1 if the month begins with 3</li>
+            <li>Code snippet: ([0][1-9]|[1-2][0-9]|[3][0-1])</li>
+          </ul>
+          <ul>
+            <li>Again, we'll cover our MM DD YYYY separator</li>
+            <li>Code snippet: [\/\.\-]</li>
+          </ul>
+        </ul>
+        <ul></ul>
+      </li>
+      <li>Our combined code snippet is: ([0][1-9]|[1-2][0-9]|[3][0-1])[\/\.\-] </li>
+    </ul>
+  </li>
+  <li>Section - 'YYYY'
+    <ul>
+      <li> Pseudocode: I want all digits in the year to be equal to 0-9. Accounting for all past and future dates using a 4 digit year</li>
+        <ul>
+          <li>All four Y's</li>
+          <ul>
+            <li>The range of YYYY can only be 0000-9999</li>
+            <li>Final code snippet: ([0-9][0-9][0-9][0-9])</li>
+          </ul>
+        </ul>
+    </ul>
+  </li>
+  <li>Final code snippet: Note: we'll add the flags for global identifier 'g' and multi-line match 'm'</li>
+  <ul>
+    <li>/([0][1-9]|[1][1-2])[\/\.\-]([0][1-9]|[1-2][0-9]|[3][0-1])[\/\.\-]([0-9][0-9][0-9][0-9])/gm</li>
+  </ul>
 </ul>
 
+<p>Feel free to visit <a>https://regex101.com/r/B9zd2y/1</a> and test it out yourself, or challenge yourself by making your own on <a>https://regex101.com/</a>!</p>
 
 ## Author
 Created by Timothy Zalewski | Deployed on [GitHub](https://github.com/Tim-Zebra)
