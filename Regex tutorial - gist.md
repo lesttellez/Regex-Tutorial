@@ -6,8 +6,6 @@ Have you ever wondered what happens when you click the "filter" check boxes on a
 
 This tutorial will explain componets of a regex and how it works. The regex we will write will check if the entered date is formatted as MM-DD-YYYY.
 
-<!-- Regex code snippet below (obtained from mVChr at https://stackoverflow.com/questions/5465375/javascript-date-regex-dd-mm-yyyy): -->
-
 ## Table of Contents
 
 - [Anchors](#anchors)
@@ -89,8 +87,8 @@ These are added to the end of an expression allowing the functionality to expand
 <p>You probably remember seeing ' \ ' previously? This is also way to 'escape' a character. Is used to match 'literally', and allows a previous special charater 'escape' it's usual defined operation. eg. /b*/ finds all occurances of 'b' but what if I was looking for the combo of 'b*'? I would change the expression be adding the escape to /b\*/ allowing us to find the literal "b*" </p>
 
 ### Example
-<h1>Now we've learned the bare basics of regex, possibly a little less maybe a little more. Regex at the source seems simple and straight forward, but knowing just enough and using great tools such as Professor Google should be enough to write some useful regex!</h1>
-<h2>Let's write a simple search to check if MM-DD-YYYY is present.</h2>
+<p>Now we've learned the bare basics of regex, possibly a little less maybe a little more. Regex at the source seems simple and straight forward, but knowing just enough and using great tools such as Professor Google should be enough to write some useful regex!</p>
+<p>Let's write a simple search to check if MM-DD-YYYY is present.</p>
 <p>Criteria will be specific enough to filter out months 1-12, with an acceptable day ranging up to 31. We will not be filtering too far in depth such as accounting for days per given month (especially leap year). Will also not concern ourselves with AD,BC, and future dates that exceed 4 digits for the year. But these can be done, have at it after this tutorial if you're brave enough or want the extra practice. Now! Let's start by creating our regex to match our simple date format:</p>
 
 <ul>
@@ -160,7 +158,7 @@ These are added to the end of an expression allowing the functionality to expand
   </ul>
 </ul>
 
-<p>Feel free to visit <a>https://regex101.com/r/B9zd2y/1</a> and test it out yourself, or challenge yourself by making your own on <a>https://regex101.com/</a>!</p>
+<p>Feel free to visit <a href="https://regex101.com/r/B9zd2y/1">https://regex101.com/r/B9zd2y/1</a> and test it out yourself, or challenge yourself by making your own on <a href="https://regex101.com/">"https://regex101.com/"</a>!</p>
 
 ## Author
 Created by Timothy Zalewski | Deployed on [GitHub](https://github.com/Tim-Zebra)

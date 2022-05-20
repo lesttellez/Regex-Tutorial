@@ -26,7 +26,6 @@ https://gist.github.com/Tim-Zebra/3670f5235b2fcdd5dbf85251d1f9db89
 
 ## References:
 
-* Code snippet obtained from mVChr at https://stackoverflow.com/questions/5465375/javascript-date-regex-dd-mm-yyyy
 * Obtained information from developer.mozzilla.org at https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 * Obtained information from rkline at https://www.cs.wcupa.edu/rkline/index/regular-expressions.html
 
@@ -34,6 +33,8 @@ https://gist.github.com/Tim-Zebra/3670f5235b2fcdd5dbf85251d1f9db89
 1. Created base files
 2. Reviewied quick overviews of regex
 3. Entered found info into the gist template
+4. Created regex (as a walkthrough tutorial)
+5. Used regex101.com to test regex
 
 ## Author:
 Created by Timothy Zalewski | Deployed on [GitHub](https://github.com/Tim-Zebra)
