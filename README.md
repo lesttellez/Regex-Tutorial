@@ -1,4 +1,4 @@
-# RegEx - Brief Tutorial
+# Regex Tutorial
 
 ## Description
 A simple markdown explaining the basic in's-and-out's of RegEx <br /> <br />
