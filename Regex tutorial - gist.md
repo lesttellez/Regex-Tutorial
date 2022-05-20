@@ -4,7 +4,7 @@ Have you ever wondered what happens when you click the "filter" check boxes on a
 
 ## Summary
 
-This tutorial will explain componets of a regex and how it works. The regex we will write will check if the entered date is formatted as MM-DD-YYYY.
+This tutorial will explain componets of a regex and how it works. We will learn how to write a regex, and at the end of the tutorial we will create a regex that matches a date formatting of MM-DD-YYYY.
 
 ## Table of Contents
 

@@ -18,8 +18,11 @@ A simple markdown explaining the basic in's-and-out's of RegEx <br /> <br />
 
 ## Application Demos:
 <h2 align="center">Gist Overview</h2>
-<p align="center"><img src="./demos/.gif" alt="gif demo" width="800" height="auto"/></p> <br />
-<p align="center"><font size="4"><a href="">Video Demo</a></font></p>
+<p align="center"><img src="./demos/gistIntro.png" alt="Intro page of gist" width="800" height="auto"/></p> <br />
+<h2 align="center">Gist Scroll Through</h2>
+<p align="center"><img src="./demos/demo_gist.gif" alt="gif demo" width="800" height="auto"/></p> <br />
+<h2 align="center">Created and tested Regex</h2>
+<p align="center"><img src="./demos/regexExample.png" alt="regex example with tests" width="800" height="auto"/></p> <br />
 
 ## Link to Deployed Page:
 https://gist.github.com/Tim-Zebra/3670f5235b2fcdd5dbf85251d1f9db89
