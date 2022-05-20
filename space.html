@@ -1,0 +1,51 @@
+<ul>
+  <li>Section - 'MM-'
+    <ul>
+      <li> Pseudocode: I want a month to match if the first M is equal to 0-1 and the last M is equal to 0-9 only when the first digit is 0, else the second digit should only equal 0-2 . We want to group the MM.</li>
+        <ul>
+          <li>The first M:</li>
+          <ul>
+            <li>I want it to equal 0 or 1. The hints that I should be using an OR operator. M will be used to denote the M not yet solved for</li>
+            <li>Code snippet: ([0]M|[1]M)</li>
+          </ul>
+          <li>The second M:</li>
+          <ul>
+            <li>I want it to equal 1-9 if the month is a single number (09) OR 0-2 (to account for oct, nov, dec.)</li>
+            <li>Code snippet: (M[1-9]|M[0-2])</li>
+          </ul>
+          <ul>
+            <li>Lets take care of whatever is being used to separate the dates, we will account for the standard MM.DD.YYYY, MM-DD-YYYY, and MM/DD/YYYY. We need for these separators to 1. not perform a function (such as ' . ' wildcard) and have them be 'literal'</li>
+            <li>Code snippet: [\/\.\-]</li>
+          </ul>
+        </ul>
+        <ul></ul>
+      </li>
+      <li>Our combined code snippet is: ([0][1-9]|[1][1-2])[\/\.\-] </li>
+    </ul>
+  </li>
+  <li>Section - 'DD-'
+    <ul>
+      <li> Pseudocode: I want the day to match 0 through 3, but at 3 I want the second digit to be no more than 1. The second digit may not be equal to 0 if the first digit is also 0</li>
+        <ul>
+          <li>The first M:</li>
+          <ul>
+            <li>I want it to equal 0 or 1. The hints that I should be using an OR operator. M will be used to denote the M not yet solved for</li>
+            <li>Code snippet: [0]M|[1]M</li>
+          </ul>
+          <li>The second M:</li>
+          <ul>
+            <li>I want it to equal 1-9 if the month is a single number (09) OR 0-2 (to account for oct, nov, dec.)</li>
+            <li>Code snippet: M[1-9]|M[0-2]</li>
+          </ul>
+          <ul>
+            <li>Lets take care of whatever is being used to separate the dates, we will account for the standard MM.DD.YYYY, MM-DD-YYYY, and MM/DD/YYYY. We need for these separators to 1. not perform a function (such as ' . ' wildcard) and have them be 'literal'</li>
+            <li>Code snippet: [\/\.\-]</li>
+          </ul>
+        </ul>
+        <ul></ul>
+      </li>
+      <li>Our combined code snippet is: [0][1-9]|[1][1-2][\/\.\-] </li>
+    </ul>
+  </li>
+  <li>Final code snippet: </li>
+</ul>
