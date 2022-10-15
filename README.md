@@ -29,7 +29,7 @@ image 1
 ![regex](./assets/regextest.png)
 
 image 2
-![regex](./assets/regextest2.png)
+![regex](./assets/regextesting2.png)
 
 # Anchors
 These go at the start and end of your regex string. (^abc$ )
