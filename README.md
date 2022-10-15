@@ -24,6 +24,49 @@ A simple markdown explaining the basic in's-and-out's of RegEx <br /> <br />
 <h2 align="center">Created and Tested Regex</h2>
 <p align="center"><img src="./demos/regexExample.png" alt="regex example with tests" width="800" height="auto"/></p> <br />
 
+# another view of testing
+image 1
+![regex](./assets/regextest.png)
+
+image 2
+![regex](./assets/regextest2.png)
+
+# Anchors
+These go at the start and end of your regex string. (^abc$ )
+
+As you can see in the example below, I've used both the ^ anchor to open up my ^regex tag$ and I've also used the $ regex anchor to close it.
+
+# Grouping and Capturing
+Parentheses go around your (characters sets). Grouping, or capturing, groups multiple characters together to create a specific group that will be used when searching for characters in your string or substrings. ((abc))
+
+# Bracket Expressions
+Bracket Expressions represented by [square brackets].  [a-z0-9] <-- this will look for any character a through z and 0 through 9
+
+# Character Classes/Sets
+There are quite a few of these, but I'll sum up the ones I'm using here.(see image 4)
+
+# Range:
+Range is case sensitive
+
+[a-z0-9]
+a-z <--example of alpabetical range
+0-9 <--example of numerical rang
+
+# Digit:
+Quite simple, it'll match any character 0-9. Should be noted it's the same as [0-9].
+
+\d <--- all the digits
+
+# Single/Literal Charaters:
+I am using both the - dash, . period, @ at sign, and the _ underscore single characters, allowing the user to use either or both in their email string.
+
+_ <-- single character
+- <-- single character
+. <-- single character
+@ <-- single character
+
+
+
 ## Link to Deployed Page:
 https://gist.github.com/Tim-Zebra/3670f5235b2fcdd5dbf85251d1f9db89
 
@@ -41,3 +84,4 @@ https://gist.github.com/Tim-Zebra/3670f5235b2fcdd5dbf85251d1f9db89
 
 ## Author:
 Created by Timothy Zalewski | Deployed on [GitHub](https://github.com/Tim-Zebra)
+
